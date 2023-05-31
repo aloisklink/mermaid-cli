@@ -395,7 +395,7 @@ describe("NodeJS API (import ... from '@mermaid-js/mermaid-cli')", () => {
     })
   })
 
-  describe('parseMMD()', () => {
+  describe.only('parseMMD()', () => {
     test('should return bytes from mmd', async () => {
       const mmdInput = 'graph TD;\n    nA-->B;\n'
       const bytes = await parseMMD(browser, mmdInput, 'svg')
