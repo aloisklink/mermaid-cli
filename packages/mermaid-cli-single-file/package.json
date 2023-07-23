@@ -1,0 +1,21 @@
+{
+    "name": "@mermaid-js/mermaid-cli-single-file",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Single-file version of mermaid-cli",
+    "license": "MIT",
+    "repository": "git@github.com:mermaid-js/mermaid-cli.git",
+    "author": "Alois Klink <alois@aloisklink.com> (https://aloisklink.com)",
+    "engines": {
+        "node": ">=18.0"
+    },
+    "scripts": {
+        "bundle": "esbuild --bundle app.js --platform=node --target=node18 --outdir=dist",
+        "pkg": "npx pkg dist/app.js --targets=node18-linux-x64"
+    },
+    "devDependencies": {
+        "@mermaid-js/mermaid-cli": "^10.0.0",
+        "esbuild": "^0.18.15",
+        "pkg": "^5.8.1"
+    }
+}
