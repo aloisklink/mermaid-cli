@@ -10,12 +10,12 @@ registry=https://registry.npmjs.com/
 
 Generate the auth token from the github profile page => settings => developer settings => personal access tokens. Click on the button “Generate new token” and check the checkboxes concerning repo and github registry.
 
-Instead of creating a .npmrc file on your own you can also use npm login --registry=https://npm.pkg.github.com which gives you an interactive prompt for entering your credentials.
+Instead of creating a `.npmrc` file on your own you can also use `npm login --registry=https://npm.pkg.github.com` which gives you an interactive prompt for entering your credentials.
 
-1. Do yarn
+1. Do `npm install`
 
 ```sh
-yarn
+npm install
 ```
 
 2. Run the script like below:
